@@ -2,36 +2,50 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- <link rel="stylesheet" href="styles.css"> -->
-	<title>HW</title>
+	<title></title>
 </head>
 <body>
-	<div class="todos-wraspanper">
-		<h1 class="todos-header">todos</h1>
-		<ul class="todos-list-tasks" role="listbox">
-			<sspanan id="todos-list-tasks_header" class="todos-list-tasks_element">What needs to be done?</span>
-			<li class="todos-list-tasks_element">
-				<span>HTML</span>
-			</li>
-			<li class="todos-list-tasks_element todos-list-tasks_element-selected">
-				<span>CSS</span>
-			</li>
-			<li class="todos-list-tasks_element">
-				<span>JS</span>
-			</li>
-			<li class="todos-list-tasks_element">
-				<span>JS tools</span>
-			</li>
-		</ul>
-		<div class="todos-info-wraspanper">
-			<span id="todos-items-left-quantity" class="todos-info-text">3 items left</span>
-			<ul class="todos-list-viewmode">
-				<li class="todos-list-viewmode_element todos-list-viewmod_element-selected">All</li>
-				<li class="todos-list-viewmode_element">Active</li>
-				<li class="todos-list-viewmode_element">Comspanleted</li>
+	<header>
+		<h1>todos</h1>
+	</header>
+	<main>
+		<div class="todos-tasks">
+			<div class="todos-tasks_input-field">
+				<div class="todos-tasks_input-field_button"></div>
+				<input type="text" placeholder="What needs to be done?">
+			</div>
+			<ul class="todos-tasks_list">
+				<li class="todos-tasks_list_element">
+					<div class="checkbox"></div>
+					<span>HTML</span>
+					<div class="erase-button"></div>
+				</li>
+				<li class="todos-tasks_list_element">
+					<div class="checkbox"></div>
+					<span>CSS</span>
+					<div class="erase-button"></div>
+				</li>
+				<li class="todos-tasks_list_element">
+					<div class="checkbox"></div>
+					<span>JS</span>
+					<div class="erase-button"></div>
+				</li>
+				<li class="todos-tasks_list_element">
+					<div class="checkbox"></div>
+					<span>JS Tools</span>
+					<div class="erase-button"></div>
+				</li>
 			</ul>
-			<span id="todos-state-info" class="todos-info-text">Clear completed</span>
 		</div>
-	</div>
+	</main>
+	<footer>
+		<span class="todos-info">3 items left</span>
+		<div class="todos-buttons-view">
+			<input class="todos-buttons-view_button" type="radio" name="todos-buttons">All
+			<input class="todos-buttons-view_button" type="radio" name="todos-buttons">Active
+			<input class="todos-buttons-view_button" type="radio" name="todos-buttons">Completed
+		</div>
+		<button class="todos-clear-button"><span>Clear completed</span></button>
+	</footer>
 </body>
 </html>
