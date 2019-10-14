@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>TODOS</title>
-    <!-- <link rel="stylesheet" href="style.css" media="all"> -->
+    <link rel="stylesheet" href="styles.css" media="all" />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" media="all" />
   </head>
   <body>
     <header>
@@ -17,6 +26,7 @@
             aria-label="Button to select or unselect all tasks"
           ></button>
           <input
+            class="todos-input-text"
             type="text"
             placeholder="What needs to be done?"
             aria-label="Write new task"
@@ -60,33 +70,33 @@
             <button class="erase-button" aria-label="Erase task"></button>
           </li>
         </ul>
+        <div class="todos-footer-wrapper">
+          <span class="todos-info">3 items left</span>
+          <div class="todos-buttons-view">
+            <input
+              class="todos-buttons-view_button"
+              type="radio"
+              name="todos-buttons"
+              aria-label="Show all tasks"
+            />All
+            <input
+              class="todos-buttons-view_button"
+              type="radio"
+              name="todos-buttons"
+              aria-label="Show all active tasks"
+            />Active
+            <input
+              class="todos-buttons-view_button"
+              type="radio"
+              name="todos-buttons"
+              aria-label="Show all completed tasks"
+            />Completed
+          </div>
+          <button class="todos-clear-button" aria-label="Clear tasks">
+            Clear completed
+          </button>
+        </div>
       </div>
     </main>
-    <footer>
-      <span class="todos-info">3 items left</span>
-      <div class="todos-buttons-view">
-        <input
-          class="todos-buttons-view_button"
-          type="radio"
-          name="todos-buttons"
-          aria-label="Show all tasks"
-        />All
-        <input
-          class="todos-buttons-view_button"
-          type="radio"
-          name="todos-buttons"
-          aria-label="Show all active tasks"
-        />Active
-        <input
-          class="todos-buttons-view_button"
-          type="radio"
-          name="todos-buttons"
-          aria-label="Show all completed tasks"
-        />Completed
-      </div>
-      <button class="todos-clear-button" aria-label="Clear tasks">
-        Clear completed
-      </button>
-    </footer>
   </body>
 </html>
