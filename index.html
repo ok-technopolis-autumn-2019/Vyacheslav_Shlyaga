@@ -1,37 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<!-- <link rel="stylesheet" href="styles.css"> -->
-	<title>HW</title>
-</head>
-<body>
-	<div class="todos-wrapper">
-		<h1 class="todos-header">todos</h1>
-		<ul class="todos-list-tasks" role="listbox">
-			<span id="todos-list-tasks_header" class="todos-list-tasks_element">What needs to be done?</span>
-			<li class="todos-list-tasks_element">
-				<p>HTML</p>
-			</li>
-			<li class="todos-list-tasks_element todos-list-tasks_element-selected">
-				<p>CSS</p>
-			</li>
-			<li class="todos-list-tasks_element">
-				<p>JS</p>
-			</li>
-			<li class="todos-list-tasks_element">
-				<p>JS tools</p>
-			</li>
-		</ul>
-		<div class="todos-info-wrapper">
-			<p id="todos-items-left-quantity" class="todos-info-text">3 items left</p>
-			<ul class="todos-list-viewmode">
-				<li class="todos-list-viewmode_element todos-list-viewmod_element-selected">All</li>
-				<li class="todos-list-viewmode_element">Active</li>
-				<li class="todos-list-viewmode_element">Completed</li>
-			</ul>
-			<p id="todos-state-info" class="todos-info-text">Clear completed</p>
-		</div>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TODOS</title>
+    <link rel="stylesheet" href="styles.css" media="all" />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" media="all" />
+  </head>
+  <body>
+    <header>
+      <h1>todos</h1>
+    </header>
+    <main>
+      <div class="todos-tasks">
+        <div class="todos-tasks_input-field">
+          <button
+            class="button-unselect-all"
+            aria-label="Button to select or unselect all tasks"
+          ></button>
+          <input
+            class="todos-input-text"
+            type="text"
+            placeholder="What needs to be done?"
+            aria-label="Write new task"
+          />
+        </div>
+        <ul class="todos-tasks_list">
+          <li class="todos-tasks_list_element">
+            <input
+              type="checkbox"
+              class="todos-tasks_list_element-status"
+              aria-label="Checkbox for task"
+            />
+            HTML
+            <button class="erase-button" aria-label="Erase task"></button>
+          </li>
+          <li class="todos-tasks_list_element">
+            <input
+              type="checkbox"
+              class="todos-tasks_list_element-status"
+              aria-label="Checkbox for task"
+            />
+            CSS
+            <button class="erase-button" aria-label="Erase task"></button>
+          </li>
+          <li class="todos-tasks_list_element">
+            <input
+              type="checkbox"
+              class="todos-tasks_list_element-status"
+              aria-label="Checkbox for task"
+            />
+            JS
+            <button class="erase-button" aria-label="Erase task"></button>
+          </li>
+          <li class="todos-tasks_list_element">
+            <input
+              type="checkbox"
+              class="todos-tasks_list_element-status"
+              aria-label="Checkbox for task"
+            />
+            JS Tools
+            <button class="erase-button" aria-label="Erase task"></button>
+          </li>
+        </ul>
+        <div class="todos-footer-wrapper">
+          <span class="todos-info">3 items left</span>
+          <div class="todos-buttons-view">
+            <input
+              class="todos-buttons-view_button"
+              type="radio"
+              name="todos-buttons"
+              aria-label="Show all tasks"
+            />All
+            <input
+              class="todos-buttons-view_button"
+              type="radio"
+              name="todos-buttons"
+              aria-label="Show all active tasks"
+            />Active
+            <input
+              class="todos-buttons-view_button"
+              type="radio"
+              name="todos-buttons"
+              aria-label="Show all completed tasks"
+            />Completed
+          </div>
+          <button class="todos-clear-button" aria-label="Clear tasks">
+            Clear completed
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
