@@ -1,0 +1,106 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+div.todos-tasks {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  font-size: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 21px;
+  color: #666666;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul.todos-tasks_list {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+li.todos-tasks_list_element,
+div.todos-tasks_input-field {
+  width: 562px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  box-shadow: inset 0px -1px 0px #e6e6e6;
+}
+
+button.erase-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: 2px;
+  visibility: hidden;
+}
+
+input.todos-tasks_list_element-status {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input.todos-tasks_list_element-status:checked + label.task-name {
+  text-decoration: line-through;
+  color: #CCCCCC;
+}
+
+input.todos-input-text {
+  outline: none;
+}
+
+input.todos-buttons-view_button {
+  cursor: pointer;
+}
+
+div.todos-tasks_input-field input {
+  padding: 0 3px;
+  border: 0;
+  width: 100%;
+  font-size: 24px;
+}
+
+li.todos-tasks_list_element:hover button.erase-button {
+  visibility: visible;
+}
+
+li.todos-tasks_list_element:hover {
+  background: #fafafa;
+}
+div.todos-footer-wrapper {
+  padding-top: 5px;
+  box-shadow: inset 0px 1px 0px #e6e6e6;
+  display: flex;
+  width: 562px;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+span.todos-info {
+}
+
+button.todos-clear-button {
+  border: 1px solid #0000;
+  cursor: pointer;
+}
+
+button.todos-clear-button:hover {
+  border: 1px solid #ebdfdf;
+}
+
+button.todos-clear-button:focus {
+  outline: none;
+}
