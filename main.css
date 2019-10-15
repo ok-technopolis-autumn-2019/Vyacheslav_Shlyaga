@@ -31,6 +31,7 @@ ul.todos-tasks_list {
 
 li.todos-tasks_list_element,
 div.todos-tasks_input-field {
+  padding: 16px;
   width: 562px;
   display: flex;
   align-items: center;
@@ -43,16 +44,26 @@ button.erase-button {
   margin-left: auto;
   margin-right: 2px;
   visibility: hidden;
+  background: url('./icons/close.png') no-repeat center / contain;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+button.erase-button:focus {
+  outline: none;
 }
 
 input.todos-tasks_list_element-status {
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 input.todos-tasks_list_element-status:checked + label.task-name {
   text-decoration: line-through;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 input.todos-input-text {
@@ -103,4 +114,13 @@ button.todos-clear-button:hover {
 
 button.todos-clear-button:focus {
   outline: none;
+}
+
+button.button-unselect-all {
+  background: url('./icons/select-all.png') no-repeat 0 0;
+  width: 30px;
+  height: 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
 }
