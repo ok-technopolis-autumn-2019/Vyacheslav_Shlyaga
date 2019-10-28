@@ -10,6 +10,7 @@ main {
   flex-direction: column;
   font-family: Roboto;
   font-style: normal;
+  font-weight: 300;
   font-size: 24px;
   color: #666666;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -84,6 +85,11 @@ main {
 }
 
 .todos-input-text {
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 200;
+  color: #CCCCCC;
 }
 
 .todos-buttons-view {
@@ -145,24 +151,31 @@ main {
 }
 
 .todos-footer-wrapper {
+	position: sticky;
   padding: 5px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: Roboto, sans-serif;
   font-style: normal;
+  font-weight: 300;
   font-size: 14px;
 }
 
 .todos-clear-button {
   border: 1px solid #0000;
   cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .button-unselect-all {
-  background: url('./icons/select-all.png') no-repeat 0 0;
+  background: url('./icons/select-all.png') no-repeat center;
   width: 30px;
   height: 15px;
+  padding: 22px 10px;
   border: none;
   cursor: pointer;
   margin-right: 10px;
