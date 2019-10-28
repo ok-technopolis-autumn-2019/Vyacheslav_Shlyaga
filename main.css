@@ -104,6 +104,7 @@ main {
 }
 
 .todos-buttons-view_text {
+	padding: 5px;
 }
 
 .todos-buttons-view_button:checked + .todos-buttons-view_text {
