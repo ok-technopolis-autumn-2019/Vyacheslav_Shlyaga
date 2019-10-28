@@ -65,8 +65,8 @@ main {
   margin-left: auto;
   margin-right: 2px;
   background: url('./icons/close.png') no-repeat center / contain;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   border: none;
 }
@@ -93,10 +93,6 @@ main {
   margin: 5px;
 }
 
-.todos-buttons-view_wrapper {
-  padding: 0px 10px;
-}
-
 .todos-buttons-view_button {
   cursor: pointer;
   position: absolute;
@@ -104,10 +100,30 @@ main {
 }
 
 .todos-buttons-view_text {
-	padding: 5px;
+  padding: 5px;
+  margin: 0px 10px;
 }
 
-.todos-buttons-view_button:checked + .todos-buttons-view_text {
+.todos-tasks_list_element-status_view {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #e6e6e6;
+  margin-right: 10px;
+}
+
+.default-null-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.todos-tasks_list_element-status:checked
+  ~ .todos-tasks_list_element-status_view {
+  background: url('./icons/completed.png') no-repeat center;
+  border: 1px solid #5DC2AF;
+}
+
+.todos-buttons-view_button:checked ~ .todos-buttons-view_text {
   border: 1px solid #ebdfdf;
   border-radius: 5px;
   padding: 4px;
