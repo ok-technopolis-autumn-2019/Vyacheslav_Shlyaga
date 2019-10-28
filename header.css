@@ -1,4 +1,4 @@
-h1 {
+.todos-header {
   display: flex;
   justify-content: space-around;
   font-family: Roboto;

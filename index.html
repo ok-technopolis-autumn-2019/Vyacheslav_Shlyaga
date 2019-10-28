@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" content="width=width-device" />
     <title>TODOS</title>
     <link rel="stylesheet" href="styles.css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i&display=swap&subset=cyrillic"
+    />
   </head>
   <body>
     <header>
-      <h1>todos</h1>
+      <h1 class="todos-header">todos</h1>
     </header>
     <main>
       <div class="todos-tasks">
@@ -64,24 +68,30 @@
         <div class="todos-footer-wrapper">
           <span class="todos-info">3 items left</span>
           <div class="todos-buttons-view">
-            <input
-              class="todos-buttons-view_button"
-              type="radio"
-              name="todos-buttons"
-              aria-label="Show all tasks"
-            />All
-            <input
-              class="todos-buttons-view_button"
-              type="radio"
-              name="todos-buttons"
-              aria-label="Show all active tasks"
-            />Active
-            <input
-              class="todos-buttons-view_button"
-              type="radio"
-              name="todos-buttons"
-              aria-label="Show all completed tasks"
-            />Completed
+            <label class="todos-buttons-view_wrapper">
+              <input
+                class="todos-buttons-view_button"
+                type="radio"
+                name="todos-buttons"
+                aria-label="Show all tasks"
+              /><span class="todos-buttons-view_text">All</span>
+            </label>
+            <label class="todos-buttons-view_wrapper">
+              <input
+                class="todos-buttons-view_button"
+                type="radio"
+                name="todos-buttons"
+                aria-label="Show all active tasks"
+              /><span class="todos-buttons-view_text">Active</span>
+            </label>
+            <label class="todos-buttons-view_wrapper">
+              <input
+                class="todos-buttons-view_button"
+                type="radio"
+                name="todos-buttons"
+                aria-label="Show all completed tasks"
+              /><span class="todos-buttons-view_text">Complete</span>
+            </label>
           </div>
           <button class="todos-clear-button" aria-label="Clear tasks">
             Clear completed
