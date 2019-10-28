@@ -53,7 +53,7 @@ main {
 
 .todos-tasks_list_element,
 .todos-tasks_input-field {
-  padding: 16px;
+  padding: 11px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f2f2f2;
