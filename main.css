@@ -52,6 +52,10 @@ main {
   min-height: 300px;
 }
 
+.todos-tasks_list_element {
+  word-break: break-all;
+}
+
 .todos-tasks_list_element,
 .todos-tasks_input-field {
   padding: 11px;
@@ -79,6 +83,10 @@ main {
   margin-right: 10px;
 }
 
+.task-name {
+  word-break: break-word;
+}
+
 .todos-tasks_list_element-status:checked ~ .task-name {
   text-decoration: line-through;
   color: #cccccc;
@@ -89,7 +97,14 @@ main {
   font-style: italic;
   font-size: 24px;
   font-weight: 200;
-  color: #CCCCCC;
+  color: #cccccc;
+}
+
+.erase-button-wrapper {
+  margin-left: auto;
+  margin-right: 2px;
+  width: 20px;
+  flex-shrink: 0;
 }
 
 .todos-buttons-view {
@@ -116,6 +131,7 @@ main {
   border-radius: 100%;
   border: 1px solid #e6e6e6;
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .default-null-wrapper {
@@ -126,7 +142,7 @@ main {
 .todos-tasks_list_element-status:checked
   ~ .todos-tasks_list_element-status_view {
   background: url('./icons/completed.png') no-repeat center;
-  border: 1px solid #5DC2AF;
+  border: 1px solid #5dc2af;
 }
 
 .todos-buttons-view_button:checked ~ .todos-buttons-view_text {
@@ -151,7 +167,7 @@ main {
 }
 
 .todos-footer-wrapper {
-	position: sticky;
+  position: sticky;
   padding: 5px 0px;
   display: flex;
   justify-content: space-between;
