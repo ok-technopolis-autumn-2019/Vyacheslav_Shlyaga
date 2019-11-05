@@ -158,6 +158,10 @@ main {
   font-size: 24px;
 }
 
+.erase-button:focus {
+  position: inherit;
+}
+
 .todos-tasks_list_element:hover .erase-button {
   position: inherit;
 }
@@ -185,6 +189,7 @@ main {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
+  color: #888888;
 }
 
 .button-unselect-all {
