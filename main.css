@@ -42,7 +42,7 @@ main {
   padding: 1px 7px;
 }
 
-.todos-tasks_list {
+.todos-tasks-list {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -52,11 +52,11 @@ main {
   min-height: 300px;
 }
 
-.todos-tasks_list_element {
+.todos-tasks-list_element {
   word-break: break-all;
 }
 
-.todos-tasks_list_element,
+.todos-tasks-list_element,
 .todos-tasks_input-field {
   padding: 11px;
   display: flex;
@@ -69,14 +69,14 @@ main {
   top: -10000px;
   margin-left: auto;
   margin-right: 2px;
-  background: url('./icons/close.png') no-repeat center / contain;
+  background: url('./icons/close.svg') no-repeat center / contain;
   width: 20px;
   height: 20px;
   cursor: pointer;
   border: none;
 }
 
-.todos-tasks_list_element-status {
+.todos-tasks-list_element-status {
   position: absolute;
   left: -1000px;
   cursor: pointer;
@@ -87,7 +87,7 @@ main {
   word-break: break-word;
 }
 
-.todos-tasks_list_element-status:checked ~ .task-name {
+.todos-tasks-list_element-status:checked ~ .task-name {
   text-decoration: line-through;
   color: #cccccc;
 }
@@ -125,7 +125,7 @@ main {
   margin: 0px 10px;
 }
 
-.todos-tasks_list_element-status_view {
+.todos-tasks-list_element-status-view {
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -134,19 +134,23 @@ main {
   flex-shrink: 0;
 }
 
-.default-null-wrapper {
+.checkbox-wrapper {
   display: flex;
   align-items: center;
 }
 
-.todos-tasks_list_element-status:focus ~ .todos-tasks_list_element-status_view {
+.todos-tasks-list_element-status:focus ~ .todos-tasks-list_element-status-view {
+  outline: auto;
+}
+
+.todos-tasks-list_element-status:checked
+  ~ .todos-tasks-list_element-status-view {
+  background: url('./icons/completed.svg') no-repeat center;
   border: 1px solid #5dc2af;
 }
 
-.todos-tasks_list_element-status:checked
-  ~ .todos-tasks_list_element-status_view {
-  background: url('./icons/completed.png') no-repeat center;
-  border: 1px solid #5dc2af;
+.todos-buttons-view_button:focus ~ .todos-buttons-view_text {
+  outline: auto;
 }
 
 .todos-buttons-view_button:checked ~ .todos-buttons-view_text {
@@ -166,11 +170,11 @@ main {
   position: inherit;
 }
 
-.todos-tasks_list_element:hover .erase-button {
+.todos-tasks-list_element:hover .erase-button {
   position: inherit;
 }
 
-.todos-tasks_list_element:hover {
+.todos-tasks-list_element:hover {
   background: #fafafa;
 }
 
@@ -197,7 +201,7 @@ main {
 }
 
 .button-unselect-all {
-  background: url('./icons/select-all.png') no-repeat center;
+  background: url('./icons/select-all.svg') no-repeat center;
   width: 30px;
   height: 15px;
   padding: 22px 10px;
