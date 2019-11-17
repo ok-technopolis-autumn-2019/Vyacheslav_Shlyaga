@@ -139,6 +139,10 @@ main {
   align-items: center;
 }
 
+.todos-tasks_list_element-status:focus ~ .todos-tasks_list_element-status_view {
+  border: 1px solid #5dc2af;
+}
+
 .todos-tasks_list_element-status:checked
   ~ .todos-tasks_list_element-status_view {
   background: url('./icons/completed.png') no-repeat center;
